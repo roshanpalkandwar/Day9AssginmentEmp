@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             // Console.WriteLine("welecome to employee wages");
-            Console.WriteLine("chooes number\n1.EMp present absent\n2.Daily wages\n3.Part time wages\n4.using switch loop");
+            Console.WriteLine("chooes number\n1.EMp present absent\n2.Daily wages\n3.Part time wages\n4.using switch loop\n5. wages FOr Month");
             int opt=Convert.ToInt32(Console.ReadLine());
 
             switch(opt)
@@ -21,6 +21,9 @@
                         break;
                 case 4:
                     SwitchLoop.CalculateWage();
+                    break ;
+                    case 5:
+                    WagesForMonth.CalculateWageForMonth();
                     break ;
             }
         }
