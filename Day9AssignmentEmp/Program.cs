@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             // Console.WriteLine("welecome to employee wages");
-            Console.WriteLine("chooes number\n1.EMp present absent\n2.Daily wages");
+            Console.WriteLine("chooes number\n1.EMp present absent\n2.Daily wages\n3.Part time wages");
             int opt=Convert.ToInt32(Console.ReadLine());
 
             switch(opt)
@@ -16,6 +16,9 @@
                     case 2:
                     DailyWages.CalculateDailyWage();
                     break;
+                case 3:
+                    partTimeW.CalculatePercentage();
+                        break;
             }
         }
     }
