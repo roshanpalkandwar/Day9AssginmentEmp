@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             // Console.WriteLine("welecome to employee wages");
-            Console.WriteLine("chooes number\n1.EMp present absent\n2.Daily wages\n3.Part time wages\n4.using switch loop\n5. wages FOr Month\n6.using while loop\n7.Monthly emp wages\n8.wages for compnay\n9.emwges for miltiple company\n10.EmpWageBuilder\n11.ComputeEmpWage");
+            Console.WriteLine("chooes number\n1.EMp present absent\n2.Daily wages\n3.Part time wages\n4.using switch loop\n5. wages FOr Month\n6.using while loop\n7.Monthly emp wages\n8.wages for compnay\n9.emwges for miltiple company\n10.EmpWageBuilder\n11.ComputeEmpWage\n13.daily emp wages along total wages");
             int opt=Convert.ToInt32(Console.ReadLine());
 
             switch(opt)
@@ -63,6 +63,12 @@
                     empWageBuilder.AddCompanyEmpWage("BMW", 10, 4, 20);
                     empWageBuilder.AddCompanyEmpWage("TCS", 10, 4, 20);
                     empWageBuilder.ComputeEmpWage();
+                    break;
+                case 13:
+                    DailyTotalWages DailyTotalWages1 = new DailyTotalWages("D-Mart", 20, 20, 100);
+                    DailyTotalWages DailyTotalWages2 = new DailyTotalWages("Reliance", 20, 20, 100);
+                    DailyTotalWages1.ComputeEmployeeWage();
+                    DailyTotalWages2.ComputeEmployeeWage();
                     break;
 
             }
