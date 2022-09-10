@@ -65,8 +65,9 @@
                     empWageBuilder.ComputeEmpWage();
                     break;
                 case 13:
-                    DailyTotalWages DailyTotalWages1 = new DailyTotalWages("D-Mart", 20, 20, 100);
-                    DailyTotalWages DailyTotalWages2 = new DailyTotalWages("Reliance", 20, 20, 100);
+                    DailyTotalWages DailyTotalWages1 = new DailyTotalWages("TATA", 20, 20, 100);
+                    DailyTotalWages DailyTotalWages2 = new DailyTotalWages("BMW", 20, 20, 100);
+                    DailyTotalWages DailyTotalWages3 = new DailyTotalWages("TCS", 20, 20, 100);
                     DailyTotalWages1.ComputeEmployeeWage();
                     DailyTotalWages2.ComputeEmployeeWage();
                     break;
